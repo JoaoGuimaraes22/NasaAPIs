@@ -3,7 +3,7 @@ import "../css/main.css";
 
 const Fetch = ({opportunity, curiosity, spirit}) => {
     return(
-        <div>
+        <div className="buttons">
             <button onClick={opportunity}>Get Opportunity Photos</button>
             <button onClick={curiosity}>Get Curiosity Photos</button>
             <button onClick={spirit}>Get Spirit Photos</button>

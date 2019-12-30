@@ -35,7 +35,7 @@ ul{
     position: fixed;
     text-align: center;
     width: 100%;
-    padding: 1rem 0 2rem 0;
+    padding: 0 0 2rem 0;
     left: 50%;
     transform: translateX(-50%);
     background: rgb(31, 31, 31);
@@ -52,20 +52,51 @@ ul li a{
 }
 
 ul li a:hover{
-    color: brown;
+    color: rgb(228, 17, 70);
 }
 
 /* Picture */
 
 #picture{
     @include Flex(column);
-    padding-top: 8rem;
+    padding-top: 6.5rem;
+    h1 .pic-span{
+        color: rgb(163, 10, 99);
+    }
     .pic-pic{
-        padding-top: 2vh;
-        max-width: 40%;
+        margin-top: 2vh;
+        max-width: 35%;
+        border: 3px solid black;
     }
     .photographer{
         padding-top: 2vh;
         text-decoration: underline;
+        .pic-span{
+            color: rgb(163, 10, 99);
+        }
     }
 }
+
+/* Fetch Buttons */
+
+.buttons{
+    @include Flex(row);
+    padding-top: 3vh;
+    button{
+        margin: 0 3rem;
+        padding: 1rem;
+        outline: none;
+        border: 3px solid black;
+        background: rgb(163, 10, 99);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    button:hover{
+        color: black;
+        background: rgb(252, 150, 209);
+    }
+}
+
+/* Opportunity Photos */
+

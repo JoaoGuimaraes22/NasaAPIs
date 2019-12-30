@@ -39,7 +39,7 @@ ul {
   position: fixed;
   text-align: center;
   width: 100%;
-  padding: 1rem 0 2rem 0;
+  padding: 0 0 2rem 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -57,7 +57,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: brown;
+  color: #e41146;
 }
 
 /* Picture */
@@ -75,16 +75,61 @@ ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 8rem;
+  padding-top: 6.5rem;
+}
+
+#picture h1 .pic-span {
+  color: #a30a63;
 }
 
 #picture .pic-pic {
-  padding-top: 2vh;
-  max-width: 40%;
+  margin-top: 2vh;
+  max-width: 35%;
+  border: 3px solid black;
 }
 
 #picture .photographer {
   padding-top: 2vh;
   text-decoration: underline;
 }
+
+#picture .photographer .pic-span {
+  color: #a30a63;
+}
+
+/* Fetch Buttons */
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 3vh;
+}
+
+.buttons button {
+  margin: 0 3rem;
+  padding: 1rem;
+  outline: none;
+  border: 3px solid black;
+  background: #a30a63;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: black;
+  background: #fc96d1;
+}
+
+/* Opportunity Photos */
 /*# sourceMappingURL=main.css.map */

@@ -4,9 +4,9 @@ import "../css/main.css";
 const Picture = ({title, image, photo}) => {
     return(
     <div id="picture">
-        <h1>Photo name: {title}</h1>
+        <h1><span className="pic-span">NASA photo of the day:</span> {title}</h1>
         <img src={image} alt="img-nasa" className="pic-pic"/>
-        <h4 className="photographer">Photographer: {photo}</h4>
+        <h4 className="photographer"><span className="pic-span">Photographer:</span> {photo}</h4>
     </div>)
 }
 
