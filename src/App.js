@@ -3,7 +3,8 @@ import Picture from './components/Picture';
 import Navbar from "./components/Navbar";
 import Curiosity from './components/Curiosity';
 import Opportunity from './components/Opportunity';
-import Spirit from "./components/Spirit"
+import Spirit from "./components/Spirit";
+import Fetch from "./components/Fetch";
 
 const App = () =>{
 
@@ -15,9 +16,6 @@ const App = () =>{
 
   useEffect(()=>{
     getData();
-    getCuriosityData();
-    getOpportunnityData();
-    getSpiritData();
   }, []);
 
 
@@ -55,7 +53,6 @@ const App = () =>{
     for(let r = 0; r < 6; r++){
       limitedData.push(data.photos[r])
     }
-    console.log(limitedData)
     setSpirit(limitedData);
   }
 
@@ -66,6 +63,11 @@ const App = () =>{
         image={img.url}
         title={img.title}
         photo={img.copyright}
+      />
+      <Fetch
+        opportunity={getOpportunnityData}
+        curiosity={getCuriosityData}
+        spirit={getSpiritData}
       />
       <div id="curiosity">
       {curiosity.map((comp)=>(
