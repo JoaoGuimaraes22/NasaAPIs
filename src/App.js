@@ -19,7 +19,6 @@ const App = () =>{
     getData();
   }, []);
 
-
   const API_KEY = "Eeu3pZRMW8vOCSLnfFhSvbsDoD58oJhG76aGj0Wa";
   const getData = async() =>{
     const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`);
@@ -31,7 +30,7 @@ const App = () =>{
     const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${API_KEY}`)
     const data = await response.json();
     let limitedData = []
-    let rand = Math.floor(Math.random() * 40);
+    let rand = Math.floor(Math.random() * 60);
     for(let i = rand; i < rand + 6; i++){
       limitedData.push(data.photos[i])
     }
