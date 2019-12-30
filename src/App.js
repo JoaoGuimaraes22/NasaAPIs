@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./css/main.css";
 import Picture from './components/Picture';
 import Navbar from "./components/Navbar";
 import Curiosity from './components/Curiosity';
