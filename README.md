@@ -1,3 +1,14 @@
+## React App Made With Different NASA APIs
+
+This project was create using the fetch API to gather data from the NASA APIs (https://api.nasa.gov/).
+I used the APOD NASA API for the Astronomy Picture of the Day on the main part of the home page, and used the Mars rover photos API for rover photos 
+
+Project made for learning React, mainly React Hooks
+
+Overall, really enjoyed using React!
+
+
+[------DefaultREADME----]
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

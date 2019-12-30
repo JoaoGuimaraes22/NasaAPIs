@@ -31,7 +31,8 @@ const App = () =>{
     const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${API_KEY}`)
     const data = await response.json();
     let limitedData = []
-    for(let i = 0; i < 6; i++){
+    let rand = Math.floor(Math.random() * 40);
+    for(let i = rand; i < rand + 6; i++){
       limitedData.push(data.photos[i])
     }
     setCuriosity(limitedData)
@@ -50,7 +51,7 @@ const App = () =>{
   const getSpiritData = async () => {
     const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=1000&api_key=${API_KEY}`)
     const data = await response.json();
-    let limitedData = []
+    let limitedData = [];
     for(let r = 0; r < 6; r++){
       limitedData.push(data.photos[r])
     }

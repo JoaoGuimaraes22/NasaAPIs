@@ -18,14 +18,13 @@ html{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    min-height: 100vh;
+}
+
 a{
     text-decoration: none;
     color: black;
-}
-
-h1{
-    text-align: center;
-    font-size: 3.5rem;
 }
 
 /* Navbar */
@@ -35,14 +34,14 @@ ul{
     position: fixed;
     text-align: center;
     width: 100%;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     left: 50%;
     transform: translateX(-50%);
     background: rgb(31, 31, 31);
 }
 
 ul li{
-    margin: 2rem 4rem 0 4rem;
+    margin: 1rem 3rem 0 3rem;
     list-style: none;
     font-weight: 600;
 }
@@ -55,18 +54,29 @@ ul li a:hover{
     color: rgb(228, 17, 70);
 }
 
+.taken-by{
+    color: rgb(163, 10, 99);
+    font-size: 1.6rem;
+}
+
+
 /* Picture */
 
 #picture{
     @include Flex(column);
-    padding-top: 6.5rem;
-    h1 .pic-span{
-        color: rgb(163, 10, 99);
+    padding-top: 3.2rem;
+    h1{
+        text-align: center;
+        font-size: 2.4rem;
+        .pic-span{
+            color: rgb(163, 10, 99);
+        }
     }
     .pic-pic{
         margin-top: 2vh;
-        max-width: 35%;
+        max-width: 30%;
         border: 3px solid black;
+        border-radius: 2%;
     }
     .photographer{
         padding-top: 2vh;
@@ -82,6 +92,7 @@ ul li a:hover{
 .buttons{
     @include Flex(row);
     padding-top: 3vh;
+    padding-bottom: 3vh ;
     button{
         margin: 0 3rem;
         padding: 1rem;
@@ -98,5 +109,45 @@ ul li a:hover{
     }
 }
 
-/* Opportunity Photos */
+/* Oportunity Photos */
 
+.oportunity{
+    @include Flex(column);
+    margin-top: 4vh;
+    p{
+        margin-top: 1vh;
+    }
+    img{
+        margin-top: 2vh;
+        width: 32%;
+    }
+
+}
+
+/* Curiosity Photos */
+
+.curiosity{
+    @include Flex(column);
+    margin-top: 4vh;
+    p{
+        margin-top: 1vh;
+    }
+    img{
+        margin-top: 2vh;
+        width: 37%;
+    }
+}
+
+/* Spirit Photos */
+
+.spirit{
+    @include Flex(column);
+    margin-top: 4vh;
+    p{
+        margin-top: 1vh;
+    }
+    img{
+        margin-top: 2vh;
+        width: 37%;
+    }
+}
